@@ -1,0 +1,37 @@
+$ TSUPREM-4 -- Example 1, Part A
+
+$ Bipolar active device region: Buried layer and epitaxial deposition
+$ Use automatic grid generation and adaptive grid
+
+INITIALIZE BORON=1E15
+$ Grow buried layer masking oxide
+DIFFUSION TEMP=1150 TIME=120 STEAM
+$ Etch the buried layer masking oxide
+ETCH OXIDE ALL
+$ Implant and drive in the antimony buried layer
+IMPLANT ANTIMONY DOSE=1E15 ENERGY=75
+DIFFUSION TEMP=1150 TIME=30 DRYO2
+DIFFUSION TEMP=1150 TIME=360
+$ Etch the oxide.
+ETCH OXIDE ALL
+$ Grow 1.8 micron of arsenic-doped epitaxy
+EPITAXY THICKNES=1.8 SPACES=9 TEMP=1050 TIME=6 ARSENIC=5E15
+$ Grow pad oxide and deposit nitride
+DIFFUSION TEMP=1050 TIME=30 DRYO2
+DEPOSITION NITRIDE THICKNES=0.12
+$ Save initial active region results
+SAVEFILE OUT.FILE=S4EX1AS
+$ Plot results
+SELECT Z=LOG10(BORON) TITLE="Active, Epitaxy" LABEL=LOG(CONCENTRATION)
+PLOT.1D BOTTOM=13 TOP=21 RIGHT=5 LINE.TYP=5 COLOR=2
+SELECT Z=LOG10(ARSENIC)
+PLOT.1D ^AXES ^CLEAR LINE.TYP=2 COLOR=3
+SELECT Z=LOG10(ANTIMONY)
+PLOT.1D ^AX ^CL LINE.TYP=3 COLOR=3
+$ Label plot
+LABEL X=4.2 Y=15.1 LABEL=Boron
+LABEL X=-.8 Y=15.8 LABEL=Arsenic
+LABEL X=2.1 Y=18.2 LABEL=Antimony
+$ Print layer information
+SELECT Z=DOPING
+PRINT.1D LAYERS 

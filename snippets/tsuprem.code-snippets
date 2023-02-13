@@ -1,0 +1,392 @@
+{
+    "AMBIENT":
+    {
+        "prefix":"AMBIENT",
+        "body":["AMBIENT ${1:gas} ${2:compare} ${3:value}"],
+        "description":"The AMBIENT statement is used to specify oxidation coefficients. OXIDE is a valid synonym for the AMBIENT statement."
+    },
+    "ANTIMONY":
+    {
+        "prefix":"ANTIMONY",
+        "body":["ANTIMONY"],
+        "description":"The ANTIMONY statement sets some of the properties of antimony."
+    },
+    "ARSENIC":
+    {
+        "prefix":"ARSENIC",
+        "body":["ARSENIC"],
+        "description":"The ARSENIC statement sets some of the properties of arsenic."
+    },
+    "ASSIGN":
+    {
+        "prefix":"ASSIGN",
+        "body":["ASSIGN"],
+        "description":"The ASSIGN statement assigns values to an assigned name."
+    },
+    "BORON":
+    {
+        "prefix":"BORON",
+        "body":["BORON"],
+        "description":"The BORON statement sets some of the properties of boron."
+    },
+    "BOUNDARY":
+    {
+        "prefix":"BOUNDARY",
+        "body":["BOUNDARY"],
+        "description":"The BOUNDARY statement specifies a boundary condition along an edge of the structure."
+    },
+    "COLOR":
+    {
+        "prefix":"COLOR",
+        "body":["COLOR"],
+        "description":"The COLOR statement fills an area of a two-dimensional plot."
+    },
+    "COMMENT":
+    {
+        "prefix":"COMMENT",
+        "body":["COMMENT"],
+        "description":"The COMMENT statement is used to specify character strings for documenting the user input and the program output. "
+    },
+    "CONTOUR":
+    {
+        "prefix":"CONTOUR",
+        "body":["CONTOUR"],
+        "description":"The CONTOUR statement plots a contour of the selected variable on a two-dimensional plot."
+    },
+    "CPULOG":
+    {
+        "prefix":"CPULOG",
+        "body":["CPULOG ${1:LOG} ${2:OUT.FILE=<c>}"],
+        "description":"The CPULOG statement controls the logging of CPU usage."
+    },
+    "DEFINE":
+    {
+        "prefix":"DEFINE",
+        "body":["DEFINE ${1:NAME} ${2:BODY}"],
+        "description":"The DEFINE statement defines strings for substitution in subsequent input statements."
+    },
+    "DEPOSITION":
+    {
+        "prefix":"DEPOSITION",
+        "body":["DEPOSITION"],
+        "description":"The DEPOSITION statement is used to deposit a specified material on the exposed surface of the current structure."
+    },
+    "DEVELOP":
+    {
+        "prefix":"DEVELOP",
+        "body":["DEVELOP"],
+        "description":"The DEVELOP statement removes exposed positive photoresist and unexposed negative photoresist."
+    },
+    "DIFFUSION":
+    {
+        "prefix":"DIFFUSION",
+        "body":["DIFFUSION"],
+        "description":"The DIFFUSION statement is used to model high temperature diffusion in both oxidizing and nonoxidizing ambients. DIFFUSE is accepted as a synonym for the DIFFUSION statement."
+    },
+    "ECHO":
+    {
+        "prefix":"ECHO",
+        "body":["ECHO ${1:STRING}"],
+        "description":"The ECHO statement prints its parameters, evaluating arithmetic expressions."
+    },
+    "ELECTRICAL":
+    {
+        "prefix":"ELECTRICAL",
+        "body":["ELECTRICAL"],
+        "description":"The ELECTRICAL statement is used to extract electrical characteristics."
+    },
+    "ELECTRODE":
+    {
+        "prefix":"ELECTRODE",
+        "body":["ELECTRODE"],
+        "description":"The ELECTRODE statement is used to name the electrodes for device simulation."
+    },
+    "ELIMINATE":
+    {
+        "prefix":"ELIMINATE",
+        "body":["ELIMINATE"],
+        "description":"The ELIMINATE statement eliminates mesh nodes along lines in a grid structure over a specified rectangular region."
+    },
+    "EPITAXY":
+    {
+        "prefix":"EPITAXY",
+        "body":["EPITAXY"],
+        "description":"The EPITAXY statement is used to grow silicon material on the exposed silicon surface of the current structure"
+    },
+    "EQUATION":
+    {
+        "prefix":"EQUATION",
+        "body":["EQUATION"],
+        "description":"The EQUATION statement is used to specify user-specified equations. The EQUATION statement is available only with the USEIT (User-Specified Equation Interface for TSUPREM-4) Option."
+    },
+    "ETCH":
+    {
+        "prefix":"ETCH",
+        "body":["ETCH"],
+        "description":"The ETCH statement is used to remove portions of the current structure."
+    },
+    "EXPOSE":
+    {
+        "prefix":"EXPOSE",
+        "body":["EXPOSE"],
+        "description":"The EXPOSE statement exposes photoresist using a mask."
+    },
+    "EXTRACT":
+    {
+        "prefix":"EXTRACT",
+        "body":["EXTRACT"],
+        "description":"The EXTRACT statement extracts information about the structure, prints the results, and/or writes them to a file."
+    },
+    "FOREACH/END":
+    {
+        "prefix":"FOREACH",
+        "body":["FOREACH ${1:NAME} ${2:LIST}", "END"],
+        "description":"The FOREACH statement causes a group of input statements to be processed repeatedly. The END statement marks the end of a FOREACH loop."
+    },
+    "HELP":
+    {
+        "prefix":"HELP",
+        "body":["HELP ${1:NAME}"],
+        "description":"The HELP statement prints a summary of statement names and parameters."
+    },
+    "IF//IF/IF.END":
+    {
+        "prefix":"IF",
+        "body":["IF ${1:CONDITION}", "IF.END"],
+        "description":"The IF statement begins a sequence of one or more conditionally processed input statement blocks."
+    },
+    "IF//ELSEIF":
+    {
+        "prefix":"ELSEIF",
+        "body":["ELSEIF ${1:CONDITION}"],
+        "description":"The ELSEIF statement terminates a conditionally processed input statement block associated with an IF or other previous ELSEIF statements and begins a new conditionally processed input statement block"
+    },
+    "IF//ELSE":
+    {
+        "prefix":"ELSE",
+        "body":["ELSE"],
+        "description":"The ELSE statement specifies alternative action if the condition part of an IF and previous ELSEIF statements are false."
+    },
+    "IMPLANT":
+    {
+        "prefix":"IMPLANT",
+        "body":["IMPLANT"],
+        "description":"The IMPLANT statement is used to simulate the ion implantation of impurities into the structure."
+    },
+    "IMPURITY":
+    {
+        "prefix":"IMPURITY",
+        "body":["IMPURITY"],
+        "description":"The IMPURITY statement is used to define impurities or modify their characteristics."
+    },
+    "INITIALIZE":
+    {
+        "prefix":"INITIALIZE",
+        "body":["INITIALIZE"],
+        "description":"The INITIALIZE statement sets up the initial structure for a simulation."
+    },
+    "INTERACTIVE":
+    {
+        "prefix":"INTERACTIVE",
+        "body":["INTERACTIVE"],
+        "description":"The INTERACTIVE statement starts the interactive input mode, allowing statements to be entered interactively from the terminal."
+    },
+    "INTERMEDIATE":
+    {
+        "prefix":"INTERMEDIATE",
+        "body":["INTERMEDIATE"],
+        "description":"The INTERMEDIATE statement specifies the intermediate quantities associated with equations. Aliases for the INTERMEDIATE statement are MODEL (see Chapter 6, \"Model (alias INTERMEDIATE),\" p. 6-7) or ARRAY (see Chapter 6, \"Array,\" p. 6-9)."
+    },
+    "INTERSTITIAL":
+    {
+        "prefix":"INTERSTITIAL",
+        "body":["INTERSTITIAL"],
+        "description":"The INTERSTITIAL statement sets the coefficients for interstitial kinetics."
+    },
+    "LABEL":
+    {
+        "prefix":"LABEL",
+        "body":["LABEL"],
+        "description":"The LABEL statement is used to add a label to a plot."
+    },
+    "LINE":
+    {
+        "prefix":"LINE",
+        "body":["LINE"],
+        "description":"The LINE statement specifies a horizontal or vertical mesh line in a non-uniform rectangular grid."
+    },
+    "LOADFILE":
+    {
+        "prefix":"LOADFILE",
+        "body":["LOADFILE"],
+        "description":"The LOADFILE statement reads mesh and solution information from a file."
+    },
+    "LOOP/L.END":
+    {
+        "prefix":"LOOP",
+        "body":["LOOP ${1:STEPS=<c>} ${2:INDEX=<c>} ${3:START=<n>}", " L.END"],
+        "description":"The LOOP statement begins an input statement loop and specifies the number of times necessary to process the statements within the loop. Optimization may be performed by a loop. The values of numerical and array parameters and assigned names may be varied on statements within loops. The L.END statement marks the end of a LOOP."
+    },
+    "L.MODIFY":
+    {
+        "prefix":"L.MODIFY",
+        "body":["L.MODIFY ${1:STEPS=<c>} ${2:NEXT|BREAK}"],
+        "description":"The L.MODIFY statement modifies the processing of a currently active statement loop associated with a LOOP statement."
+    },
+    "MASK":
+    {
+        "prefix":"MASK",
+        "body":["MASK ${1:IN.FILE=<c>}"],
+        "description":"The MASK statement reads masking information from a file."
+    },
+    "MATERIAL":
+    {
+        "prefix":"MATERIAL",
+        "body":["MATERIAL"],
+        "description":"The MATERIAL statement sets the physical properties of materials."
+    },
+    "MESH":
+    {
+        "prefix":"MESH",
+        "body":["MESH"],
+        "description":"The MESH statement specifies a grid spacing scale factor and default values for controlling automatic grid generation."
+    },
+    "METHOD":
+    {
+        "prefix":"METHOD",
+        "body":["METHOD"],
+        "description":"The METHOD statement selects models for oxidation and diffusion, and specifies numerical methods."
+    },
+    "MOBILITY":
+    {
+        "prefix":"MOBILITY",
+        "body":["MOBILITY"],
+        "description":"The MOBILITY statement is used to define or modify the dependence of carrier mobility on impurity concentration and temperature within a semiconductor."
+    },
+    "MOMENT":
+    {
+        "prefix":"MOMENT",
+        "body":["MOMENT"],
+        "description":"The MOMENT statement sets distribution moments for use in ion implantation."
+    },
+    "OPTION":
+    {
+        "prefix":"OPTION",
+        "body":["OPTION"],
+        "description":"The OPTION statement sets terminal and plotting options."
+    },
+    "PAUSE":
+    {
+        "prefix":"PAUSE",
+        "body":["PAUSE"],
+        "description":"The PAUSE statement causes the program to stop executing input statements until a response is received from your terminal."
+    },
+    "PHOSPHORUS":
+    {
+        "prefix":"PHOSPHORUS",
+        "body":["PHOSPHORUS"],
+        "description":"The PHOSPHORUS statement sets some of the properties of phosphorus."
+    },
+    "PLOT.1D":
+    {
+        "prefix":"PLOT.1D",
+        "body":["PLOT.1D"],
+        "description":"The PLOT.1D statement plots the value of the selected expression along a line through the structure."
+    },
+    "PLOT.2D":
+    {
+        "prefix":"PLOT.2D",
+        "body":["PLOT.2D"],
+        "description":"The PLOT.2D statement specifies a two-dimensional plot of the device structure."
+    },
+    "PLOT.3D":
+    {
+        "prefix":"PLOT.3D",
+        "body":["PLOT.3D"],
+        "description":"Create a three-dimensional projection plot of the solution."
+    },
+    "PRINT.1D":
+    {
+        "prefix":"PRINT.1D",
+        "body":["PRINT.1D"],
+        "description":"The PRINT.1D statement prints the value of the selected expression along a line through the structure. It can also print layer thickness and integrated doping information"
+    },
+    "PROFILE":
+    {
+        "prefix":"PROFILE",
+        "body":["PROFILE"],
+        "description":"The PROFILE statement allows a one-dimensional impurity profile to be read from a file."
+    },
+    "REACTION":
+    {
+        "prefix":"REACTION",
+        "body":["REACTION"],
+        "description":"The REACTION statement defines the reactions that occur at material interfaces."
+    },
+    "REGION":
+    {
+        "prefix":"REGION",
+        "body":["REGION"],
+        "description":"The REGION statement specifies the material type of a mesh region."
+    },
+    "RETURN":
+    {
+        "prefix":"RETURN",
+        "body":["RETURN"],
+        "description":"The RETURN statement exits the current input mode and returns to the previous level of input. BATCH is a synonym for the RETURN statement."
+    },
+    "SAVEFILE":
+    {
+        "prefix":"SAVEFILE",
+        "body":["SAVEFILE"],
+        "description":"The SAVEFILE statement writes mesh and solution information to a file."
+    },
+    "SELECT":
+    {
+        "prefix":"SELECT",
+        "body":["SELECT"],
+        "description":"The SELECT statement evaluates a quantity to be printed or plotted. It is also used to specify plot titles and axis labels."
+    },
+    "SOURCE":
+    {
+        "prefix":"SOURCE",
+        "body":["SOURCE ${1:FILE_NAME}"],
+        "description":"The SOURCE statement causes TSUPREM-4 to read input statements from a file."
+    },
+    "STOP":
+    {
+        "prefix":"STOP",
+        "body":["STOP"],
+        "description":"The STOP statement terminates the execution of the program. EXIT and QUIT are synonyms for the STOP statement."
+    },
+    "STRESS":
+    {
+        "prefix":"STRESS",
+        "body":["STRESS"],
+        "description":"The STRESS statement calculates the stresses caused by thermal mismatch between materials or due to intrinsic stress in deposited films."
+    },
+    "STRUCTURE":
+    {
+        "prefix":"STRUCTURE",
+        "body":["STRUCTURE"],
+        "description":"The STRUCTURE statement reflects, truncates, or extends the current structure."
+    },
+    "UNDEFINE":
+    {
+        "prefix":"UNDEFINE",
+        "body":["UNDEFINE"],
+        "description":"The UNDEFINE statement undefines a previously defined abbreviation."
+    },
+    "VACANCY":
+    {
+        "prefix":"VACANCY",
+        "body":["VACANCY"],
+        "description":"The VACANCY statement sets the coefficients for vacancy kinetics."
+    },
+    "VIEWPORT":
+    {
+        "prefix":"VIEWPORT",
+        "body":["VIEWPORT ${1:X.MIN=<n>} ${2:X.MAX=<n>} ${3:[Y.MIN=<n>} ${4:Y.MAX=<n>}"],
+        "description":"The VIEWPORT statement limits plotting to a subset of the available drawing surface. It can be used to scale plots."
+    }
+}

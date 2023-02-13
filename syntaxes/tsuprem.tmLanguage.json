@@ -1,0 +1,86 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "TSUPREM4",
+	"patterns": [
+        {
+			"include": "#comments"
+		},
+        {
+			"include": "#variable"
+		},
+        {
+			"include": "#definition"
+		},
+		{
+			"include": "#bool"
+		},
+		{
+			"include": "#keywords1"
+		},
+		{
+			"include": "#keywords2"
+		},
+		{
+			"include": "#keywords3"
+		},
+        {
+			"include": "#keywords4"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+        "comments": {
+			"name": "comment.control.tsuprem",
+            "begin": "\\$|COMMENT|comment",
+            "end": "$"
+		},
+        "todo-keyword": {
+            "name": "keyword.todo",
+            "match": "TODO"
+        },
+		"keywords1": {
+			"patterns": [{
+				"name": "entity.name.function.tsuprem",
+				"match": "SOURCE|RETURN|INTERACTIVE|PAUSE|STOP|FOREACH|END|LOOP|L.END|L.MODIFY|IF|ELSEIF|ELSE|IF.END|ASSIGN|INTERMEDIATE|ECHO|OPTION|DEFINE|UNDEFINE|CPULOG"
+			}]
+		},
+        "keywords2": {
+			"patterns": [{
+				"name": "entity.name.function.tsuprem",
+				"match": "HELP|MESH|LINE|ELIMINATE|BOUNDARY|REGION|INITIALIZE|LOADFILE|SAVEFILE|STRUCTURE|MASK|PROFILE|ELECTRODE|DEPOSITION|EXPOSE|DEVELOP|ETCH|IMPLANT|DIFFUSION"
+			}]
+		},
+        "keywords3": {
+			"patterns": [{
+				"name": "entity.name.function.tsuprem",
+				"match": "EPITAXY|STRESS|SELECT|PRINT.1D|PLOT.1D|PLOT.2D|CONTOUR|COLOR|PLOT.3D|LABEL|EXTRACT|ELECTRICAL|VIEWPORT"
+			}]
+		},
+        "keywords4": {
+			"patterns": [{
+				"name": "entity.name.function.tsuprem",
+				"match": "METHOD|EQUATION|AMBIENT|MOMENT|MATERIAL|IMPURITY|REACTION|MOBILITY|INTERSTITIAL|VACANCY|ANTIMONY|ARSENIC|BORON|PHOSPHORUS"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.tsuprem",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.tsuprem",
+					"match": "\\\\."
+				}
+			]
+		},
+        "bool": {
+			"patterns": [{
+				"name": "constant.character.tsuprem",
+				"match": "true|false|{TRANSLATE}"
+			}]
+		}
+	},
+	"scopeName": "source.tsuprem"
+}
