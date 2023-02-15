@@ -16,5 +16,4 @@ Download and put this folder into the following folder
 [More on Installing Extension](https://code.visualstudio.com/docs/editor/extension-marketplace "Visual studio code extension installation guide")
 
 ## Example
-![image info](sample.png)
-
+![image](images/sample.png)

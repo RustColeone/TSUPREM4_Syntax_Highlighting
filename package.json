@@ -1,10 +1,16 @@
 {
     "name": "tsuprem-script",
+    "publisher": "LeoYan",
     "displayName": "tsuprem4 syntax highlighting",
     "description": "tsuprem4 syntax highlighting",
-    "version": "0.0.1",
+    "icon": "images/logo.png",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.67.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/RustColeone/tsuprem-script"
     },
     "categories": [
         "Programming Languages"
